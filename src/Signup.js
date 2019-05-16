@@ -109,7 +109,7 @@ export const Signup = () => (
             <Field type="text" name="name" css={fieldStyle} />
             {errors.name && <ErrorMessage>{errors.name}</ErrorMessage>}
             <CustomLabel>パスワード</CustomLabel>
-            <Field type="text" name="password" css={fieldStyle}/>
+            <Field type="password" name="password" css={fieldStyle}/>
             {errors.password && <ErrorMessage>{errors.password}</ErrorMessage>}
             <button type="submit" disabled={isSubmitting} css={{ marginTop: '1em'}}>
               Submit
